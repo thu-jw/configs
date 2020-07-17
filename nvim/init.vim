@@ -326,9 +326,6 @@ let g:tex_conceal= 'abdmg'
 let g:polyglot_disabled = ['latex']
 set conceallevel=1
 set concealcursor="inc"
-hi Conceal guifg=cyan
-hi clear Special
-hi Special guifg=cyan
 
 
 setlocal spell
