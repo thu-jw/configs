@@ -43,8 +43,7 @@ curl -o ~/.config/nvim/init.vim https://raw.githubusercontent.com/thu-jw/configs
 
 ### Node
 ```
-echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.bashrc
-. ~/.bashrc
+echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.zshrc
 mkdir ~/.local
 mkdir ~/node-latest-install
 cd ~/node-latest-install
