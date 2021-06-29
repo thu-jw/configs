@@ -40,3 +40,16 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 mkdir -p ~/.config/nvim
 curl -o ~/.config/nvim/init.vim https://raw.githubusercontent.com/thu-jw/configs/master/nvim/init.vim
 ```
+
+### Node
+```
+echo 'export PATH=$HOME/local/bin:$PATH' >> ~/.bashrc
+. ~/.bashrc
+mkdir ~/local
+mkdir ~/node-latest-install
+cd ~/node-latest-install
+wget -c http://nodejs.org/dist/node-latest.tar.gz | tar xz --strip-components=1
+./configure --prefix=~/local
+make install 
+wget -c https://www.npmjs.org/install.sh | sh  
+```
