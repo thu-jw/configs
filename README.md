@@ -43,13 +43,13 @@ curl -o ~/.config/nvim/init.vim https://raw.githubusercontent.com/thu-jw/configs
 
 ### Node
 ```
-echo 'export PATH=$HOME/local/bin:$PATH' >> ~/.bashrc
+echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.bashrc
 . ~/.bashrc
-mkdir ~/local
+mkdir ~/.local
 mkdir ~/node-latest-install
 cd ~/node-latest-install
 wget -c http://nodejs.org/dist/node-latest.tar.gz | tar xz --strip-components=1
-./configure --prefix=~/local
+./configure --prefix=~/.local
 make install 
 wget -c https://www.npmjs.org/install.sh | sh  
 ```
