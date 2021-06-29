@@ -36,3 +36,7 @@ chmod u+x nvim.appimage && ./nvim.appimage
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
+```
+mkdir -p ~/.config/nvim
+curl -o ~/.config/nvim/init.vim https://raw.githubusercontent.com/thu-jw/configs/master/nvim/init.vim
+```
