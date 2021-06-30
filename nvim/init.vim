@@ -359,6 +359,13 @@ if filereadable(expand("~/.config/nvim/local.vim"))
 	source ~/.vim/config/local.vim
 endif
 
+if $CONDA_PREFIX == ""
+    let s:current_python_path=$CONDA_PYTHON_EXE
+else
+    let s:current_python_path=$CONDA_PREFIX.'/bin/python'
+endif
+call coc#config('python', {'pythonPath': s:current_python_path})
+
 " cmap W w !sudo tee > /dev/null %
 :command WQ wq
 :command Wq wq
